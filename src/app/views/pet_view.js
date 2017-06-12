@@ -16,6 +16,13 @@ var PetView = Backbone.View.extend({
 
     return this;
   },
+  events: {
+    "click button.alert": "deletePet",
+    // "click button.success": "toggleComplete"
+  },
+  deletePet: function() {
+    this.model.destroy();
+  },
 });
 
 export default PetView;

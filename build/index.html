@@ -40,7 +40,7 @@
             <input id="vaccinated-checkbox" type="checkbox">
             <label for="vaccinated-checkbox">Vaccinated?</label>
           </div>
-          <button id="add-task" class="medium-3 columns button success">Add a Pet</button>
+          <button id="add-pet" class="medium-3 columns button success">Add a Pet</button>
         </section>
 
       </section>
@@ -53,6 +53,9 @@
 
     <script id="pet-card-template" type="text/template">
       <li><%- pet.name %></li>
+      <button class="button alert">
+        Delete
+      </button>
     </script>
 
     <script id="pet-info-template" type="text/template">
