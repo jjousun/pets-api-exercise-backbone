@@ -13,9 +13,40 @@
       <h1>Pets!</h1>
     </header>
     <main>
+      <section id='new-pet'>
+        <h2>Create a New Pet</h2>
+        <section class="row" id="name-section">
+          <label class="columns medium-12">Name
+            <input type="text" name="name" id="name" placeholder="Enter pet name here" />
+          </label>
+        </section>
+        <section class="row" id="breed-section">
+          <label class="columns medium-12">Breed
+            <input type="text" name="breed" id="breed" placeholder="Enter breed here" />
+          </label>
+        </section>
+        <section class="row" id="age-section">
+          <label class="columns medium-12">Age
+            <input type="number" name="age" id="age" placeholder="Enter age here" />
+          </label>
+        </section>
+        <section class="row" id="description-section">
+          <label class="columns medium-12">Description
+            <input type="text" name="description" id="description" placeholder="Enter description here" />
+          </label>
+        </section>
+        <section class="row" id="buttons-section">
+          <div class="medium-8 columns">
+            <input id="vaccinated-checkbox" type="checkbox">
+            <label for="vaccinated-checkbox">Vaccinated?</label>
+          </div>
+          <button id="add-task" class="medium-3 columns button success">Add a Pet</button>
+        </section>
+
+      </section>
       <section id='pet'></section>
       <section id='pet-list'></section>
-      <section id='new-pet'></section>
+
     </main>
 
     <!-- Templates -->
